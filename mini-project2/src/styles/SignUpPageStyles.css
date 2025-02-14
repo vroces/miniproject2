@@ -1,163 +1,163 @@
-
-
 /* Global reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background: url("../assets/signupbackground.png") no-repeat center center fixed;
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Full height of the viewport */
-  }
-  
-  
-  
-  /* Centering form-page vertically */
-  .form-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height of the viewport */
-    width: 100vw;
-  }
-  
-  /* Heading container styling */
-  .heading-container {
-    width: 300px;
-    padding: 20px;
-    background-color: #000; /* Set background to black */
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    color: #fff; /* Set text color to white */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
-    text-align: center; /* Centers text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px; /* Space between heading and form */
-  }
-  
-  /* Logo image styling */
-  .heading-container .revisedLogo {
-      width: 180px; /* Adjust logo size */
-      height: auto;
-      margin-bottom: 20px;
-      
-    }
-  
-  /* Form container styling */
-  .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .login-form {
-    width: 300px;
-    padding: 20px;
-    background-color: #000; /* Set form background to black */
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    color: #fff; /* Set text color to white */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border around the form */
-  }
-  
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
-    border-radius: 5px;
-    background-color: #333; /* Dark background for input fields */
-    color: white; /* White text for input fields */
-  }
-  
-  .login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #0095f6;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Style for the select dropdown */
-  .login-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for select box */
-    border-radius: 5px;
-    background-color: #333; /* Dark background for select box */
-    color: white; /* White text for the dropdown */
-  }
-  
-  .login-form select:focus {
-    outline: none;
-    border-color: #0095f6; /* Highlight border color on focus */
-  }
-  
-  .login-form button:hover {
-    background-color: #0077cc;
-  }
-  
-  .create-account {
-    text-align: center;
-  }
-  
-  .create-account p {
-    margin-bottom: 10px;
-  }
-  
-  .create-account button {
-    background: transparent;
-    border: 1px solid #0095f6;
-    color: #0095f6;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .create-account button:hover {
-    background-color: #0095f6;
-    color: white;
-  }
-  
-  /* Styling for the new "Don't have an account? Sign up" container */
-  .sign-up-container {
-    width: 300px;
-    padding: 20px;
-    background-color: #000; /* Set form background to black */
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    color: #fff; /* Set text color to white */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border around the form */
-    text-align: center;
-  }
-  
-  .sign-up-container p {
-    color: #fff; /* White color for text */
-  }
-  
-  .sign-up-link {
-    color: #0095f6; /* Blue color for the "Sign up" link */
-    text-decoration: none; /* Removes underline */
-  }
-  
-  .sign-up-link:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Centering form-page vertically */
+.form-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+
+  /* Add background image */
+  background-image: url("../assets/signupbackground.png"); /* Path to your background image */
+  background-size: cover; /* Ensure the background covers the whole container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
+/* Heading container styling */
+.heading-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #000; /* Set background to black */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Set text color to white */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  text-align: center; /* Centers text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px; /* Space between heading and form */
+  position: relative;
+  margin-top: 10px;
+}
+
+/* Logo image styling */
+.heading-container .revisedLogo {
+  width: 180px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Form container styling */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  background-color: #000; /* Set form background to black */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  color: #fff; /* Set text color to white */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border around the form */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
+  border-radius: 5px;
+  background-color: #333; /* Dark background for input fields */
+  color: white; /* White text for input fields */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for the select dropdown */
+.login-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for select box */
+  border-radius: 5px;
+  background-color: #333; /* Dark background for select box */
+  color: white; /* White text for the dropdown */
+}
+
+.login-form select:focus {
+  outline: none;
+  border-color: #0095f6; /* Highlight border color on focus */
+}
+
+.login-form button:hover {
+  background-color: #0077cc;
+}
+
+.create-account {
+  text-align: center;
+}
+
+.create-account p {
+  margin-bottom: 10px;
+}
+
+.create-account button {
+  background: transparent;
+  border: 1px solid #0095f6;
+  color: #0095f6;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-account button:hover {
+  background-color: #0095f6;
+  color: white;
+}
+
+/* Styling for the new "Don't have an account? Sign up" container */
+.sign-up-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #000; /* Set form background to black */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  color: #fff; /* Set text color to white */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border around the form */
+  text-align: center;
+}
+
+.sign-up-container p {
+  color: #fff; /* White color for text */
+}
+
+.sign-up-link {
+  color: #0095f6; /* Blue color for the "Sign up" link */
+  text-decoration: none; /* Removes underline */
+}
+
+.sign-up-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}

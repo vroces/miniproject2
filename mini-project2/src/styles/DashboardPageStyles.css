@@ -1,0 +1,328 @@
+General Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+/* Logo Styling */
+/* .logo {
+    width: 150px; 
+    height: auto; 
+    
+    
+} */
+
+/* Notification Icon */
+.notification-container {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.notification-icon {
+    width: 30px;  /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    cursor: pointer; /* Makes it look clickable */
+    transition: opacity 0.3s ease;
+}
+
+.notification-icon:hover {
+    opacity: 0.7; /* Adds hover effect */
+}
+
+/* Header */
+.header {
+    border: 6px solid red;
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    position: relative; 
+    
+
+}
+
+/* Logo */
+.logo-container {
+    flex-shrink: 0;
+    /* border: 4px solid white; */
+    /*this container affects the logo container on the landing page too*/
+}
+
+.revisedLogo2 {
+    height: 100px;
+    width: 100px;
+}
+
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns links and profile pic to the right */
+    flex-grow: 1;
+    border: 3px solid pink;
+}
+
+/* Navigation Row */
+.nav {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Profile Picture */
+.profile-pic-container {
+    margin-left: 20px;
+    display: block;
+    
+}
+/* Profile Picture Container */
+.profile-pic-with-notification {
+    position: relative;
+    display: inline-block;
+}
+/* Notification Icon Container */
+.notification-container {
+    position: absolute;
+    bottom: -5px; /* Position it slightly above the profile picture */
+    left: -20px; /* Position it slightly to the right of the profile picture */
+    width: 20px; /* Adjust size of notification icon */
+    height: 20px;
+    cursor: pointer;
+}
+
+.notification-icon {
+    width: 100%; /* Makes the icon fill the container */
+    height: 100%; /* Makes the icon fill the container */
+}
+
+/* Optional: Hover effect */
+.notification-container:hover .notification-icon {
+    opacity: 0.7;
+}
+.profile-pic {
+    width: 70px;  /* Fixed width */
+    height: 70px; /* Fixed height (same as width for a perfect circle) */
+    border-radius: 50%; /* Ensures the image appears circular */
+    object-fit: fit;
+    display: block;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for input fields */
+    color: white; /* White text for input fields */
+}
+
+
+
+/* Welcome Message - Bottom Left */
+.welcome-container {
+    position: absolute;
+    bottom: 10px;
+    left: 178px;
+    font-size: 18px;
+    font-weight: bold;
+    top: 110px;
+    
+}
+
+/* Sub Header Section */
+.sub-header {
+    background-color: #f39c12;
+    color: rgb(0, 0, 0);
+    text-align: center;
+   padding: 2px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+/* Stretched Text Effect */
+.stretched-text {
+    font-family: Arial, sans-serif; 
+    font-size: 30px; 
+    letter-spacing: 1px; 
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Positioning context for the overlay */
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    padding: 80px 50px;
+    border: 6px solid green;
+}
+
+/* Overlay for better text contrast */
+.hero::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay with 40% opacity */
+    z-index: 1; /* Place the overlay below the text */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensures text stays on top of the overlay */
+    top: 150px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-top: 100px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f39c12;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #f39c12;
+}
+
+footer p {
+    margin-top: 10px;
+}
