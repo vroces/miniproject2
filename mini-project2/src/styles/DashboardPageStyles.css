@@ -27,6 +27,7 @@ body {
 .notification-container {
     margin-left: 20px;
     display: inline-block;
+    
 }
 
 .notification-icon {
@@ -41,20 +42,26 @@ body {
 }
 
 /* Header */
-.header {
-    border: 6px solid red;
+.dashboard-header {
+    /* border: 6px solid red; */
+    width: 100vw;
     /* display: flex; */
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     background-color: black;
     color: white;
-    padding: 20px 20px;
+    padding: 5px 20px;
     position: relative; 
+    
+   
     
 
 }
-
+.dashboardlogo-container {
+    display: flex;
+    /* border: 5px solid green; */
+}
 /* Logo */
 .logo-container {
     flex-shrink: 0;
@@ -63,18 +70,29 @@ body {
 }
 
 .revisedLogo2 {
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
+    /* border: 4px solid lightblue */
+
+    
 }
 
 
 /* Navigation Container */
 .nav-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Aligns links and profile pic to the right */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-end; /* Align everything to the right */
     flex-grow: 1;
-    border: 3px solid pink;
+    /* border: 3px solid pink; */
+    margin-top: 10px;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    width: 100%;
 }
 
 /* Navigation Row */
@@ -106,6 +124,7 @@ body {
 .profile-pic-container {
     margin-left: 20px;
     display: block;
+    margin-left: 20px;
     
 }
 /* Profile Picture Container */
@@ -142,9 +161,9 @@ body {
 
 /* Search Bar */
 .search-bar {
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     width: 300px;
     
 }
@@ -152,7 +171,7 @@ body {
 .search-bar input {
     width: 300px;
     padding: 10px;
-    
+    margin-bottom: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
     border-radius: 5px;
     background-color: #333; /* Dark background for input fields */
@@ -165,10 +184,10 @@ body {
 .welcome-container {
     position: absolute;
     bottom: 10px;
-    left: 178px;
+    left: 220px;
     font-size: 18px;
     font-weight: bold;
-    top: 110px;
+    top: 170px;
     
 }
 
@@ -191,7 +210,7 @@ body {
 
 /* Hero Section */
 .hero {
-    position: relative; /* Positioning context for the overlay */
+    position: relative; 
     background-image: url('../assets/background.png');
     background-size: cover;
     background-position: center;
@@ -199,7 +218,7 @@ body {
     text-align: center;
     height: 80vh;
     padding: 80px 50px;
-    border: 6px solid green;
+    /* border: 6px solid green; */
 }
 
 /* Overlay for better text contrast */
@@ -217,7 +236,7 @@ body {
 .hero-content {
     position: relative;
     z-index: 2; /* Ensures text stays on top of the overlay */
-    top: 150px;
+    top: 170px;
 }
 
 .hero-content h2 {
@@ -242,7 +261,11 @@ body {
 .cta-button:hover {
     background-color: #e67e22;
 }
-
+.cta-button:focus,
+.cta-button:active {
+    color: #fff; /* Keep the text color white on focus and active */
+    outline: none; /* Optional: Remove default outline */
+}
 /* Features Section */
 .features {
     display: flex;

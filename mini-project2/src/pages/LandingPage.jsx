@@ -1,6 +1,5 @@
 import "../styles/LandingPageStyles.css";
 import Logo from "../components/Logo";
-import SlidingText from "../components/SlidingText";
 import LoginForm from "../components/LoginForm";
 import SignUpLink from "../components/SignUpLink";
 

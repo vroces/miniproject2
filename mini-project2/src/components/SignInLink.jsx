@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const SignInLink = () => {
     return (
       <div className="sign-up-container">
-        <p>Have an account? <a href="#" className="sign-up-link">Sign in</a></p>
+        <p>Have an account? <Link to="/" className="sign-in-link">Sign in</Link></p>
       </div>
     );
   };

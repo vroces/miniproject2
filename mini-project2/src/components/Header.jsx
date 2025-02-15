@@ -6,19 +6,26 @@ import SearchBar from '../components/SearchBar';
 import WelcomeMessage from '../components/WelcomeMessage';
 
 const Header = () => {
-    console.log("Header component rendered!");
-  return (
-    
-    <header className="header">
+  console.log("Header component rendered!");
+return (
+  <header className="dashboard-header">
+    <div className="dashboardlogo-container">
       <RevisedLogo />
       <div className="nav-container">
-        <Navigation/>
+        {/* Group Navigation and Profile Pic in a row */}
+        <div className="nav-top">
+          <Navigation />
+          <Profile />
+        </div>
+
+        {/* Search Bar placed below */}
         <SearchBar />
-        <Profile />
       </div>
-      <WelcomeMessage />
-    </header>
-  );
+    </div>
+    <WelcomeMessage />
+  </header>
+);
 };
+
 
 export default Header;

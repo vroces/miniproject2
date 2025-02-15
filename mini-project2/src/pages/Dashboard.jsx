@@ -13,8 +13,8 @@ const Dashboard = () => {
   return (
     <>
     <Header/>
-    <SubHeader/>
-    <Hero/>
+ <SubHeader/>
+    <Hero/> 
 
         
           <Features/>
