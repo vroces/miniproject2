@@ -42,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px; /* Space between heading and form */
+  margin-bottom: 20px; /* Space between heading and form */
   position: relative;
   margin-top: 10px;
 }
@@ -51,7 +51,7 @@ body {
 .heading-container .revisedLogo {
   width: 180px; /* Adjust logo size */
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Form container styling */

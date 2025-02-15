@@ -1,0 +1,132 @@
+/* Target only the ForgotPasswordPage container */
+.revisedLogo2 {
+    width: 240px; /* Adjust size as needed */
+    height: auto;
+   
+   
+  }
+.forgot-password-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    position: absolute; /* Allow full control over positioning */
+    top: 50%; /* Move the top edge of the container to the center vertically */
+    left: 50%; /* Move the left edge of the container to the center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position so that it's truly centered */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height of the viewport */
+    background-color: #000; /* Optional: Set a background color for the page */
+    color: white; /* White text */
+  }
+  
+  /* Title Styling */
+  .forgot-password-page h2 {
+    font-size: 28px;
+    color: rgb(223, 183, 52); /* Gold color */
+    margin-bottom: 20px; /* Space between the heading and the form */
+  }
+  
+  
+  
+  /* Ensure the ForgotPw form also centers inside its container */
+  .forgotpw-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border around the form */
+    
+  }
+  
+  .forgotpw-form .form-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(223, 183, 52); /* Gold color */
+    text-align: center;
+    margin-bottom: 10px; /* Space between heading and form */
+  }
+  
+  .forgotpw-form .form-subtext {
+    font-size: 14px;
+    color: white; /* Set text color to white */
+    text-align: center;
+    margin-bottom: 30px; /* Space between subtext and form */
+  }
+  
+  .forgotpw-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for input fields */
+    color: white; /* White text for input fields */
+  }
+  
+  .forgotpw-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .forgotpw-form button:hover {
+    background-color: #0077cc;
+  }
+  
+  .error-message, .success-message {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  
+  /* Position the Login button at the top-right corner */
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+  }
+  
+  .login-button {
+    font-size: 16px;
+    color: rgb(223, 183, 52); /* Gold color for the login link */
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid rgb(223, 183, 52);
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: rgb(223, 183, 52);
+    color: black; /* Text color when hovered */
+    cursor: pointer;
+  }
+  
+  
+  .logo-container2 {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 50px;
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+  }
+  
