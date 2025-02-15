@@ -1,3 +1,21 @@
+
+/* In your styles */
+.nav-container {
+  position: absolute;
+  top: 5px; /* Distance from the top of the page */
+  right: 5px; /* Distance from the right of the page */
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  width: auto;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between; /* Space out the navigation and profile */
+  align-items: center;
+  width: 100%; /* Full width if needed */
+}
+
 .player-cards-container {
     display: flex;
     justify-content: center;

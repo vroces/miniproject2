@@ -8,7 +8,7 @@ import RevisedLogo from "../components/RevisedLogo";
 const ForgotPasswordPage = () => {
   return (
     <div className="forgot-password-page">
-      <RevisedLogo/>
+      <RevisedLogo size="small"/>
       {/* Login Button at the top-right */}
       <div className="top-right">
         <Link to="/" className="login-button">Login</Link>

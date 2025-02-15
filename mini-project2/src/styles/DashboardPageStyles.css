@@ -1,346 +1,355 @@
-General Reset
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+General Reset * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
-
-
-
-/* Logo Styling */
-/* .logo {
-    width: 150px; 
-    height: auto; 
-    
-    
-} */
 
 /* Notification Icon */
 .notification-container {
-    margin-left: 20px;
-    display: inline-block;
-    
+  margin-left: 20px;
+  display: inline-block;
 }
 
 .notification-icon {
-    width: 30px;  /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    cursor: pointer; /* Makes it look clickable */
-    transition: opacity 0.3s ease;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  cursor: pointer; /* Makes it look clickable */
+  transition: opacity 0.3s ease;
 }
 
 .notification-icon:hover {
-    opacity: 0.7; /* Adds hover effect */
+  opacity: 0.7; /* Adds hover effect */
 }
 
 /* Header */
 .dashboard-header {
-    /* border: 6px solid red; */
-    width: 100vw;
-    /* display: flex; */
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    padding: 5px 20px;
-    position: relative; 
-    
-   
-    
-
-}
-.dashboardlogo-container {
-    display: flex;
-    /* border: 5px solid green; */
-}
-/* Logo */
-.logo-container {
-    flex-shrink: 0;
-    /* border: 4px solid white; */
-    /*this container affects the logo container on the landing page too*/
+  /* border: 6px solid red; */
+  width: 100vw;
+  /* display: flex; */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  /* padding: 5px 20px; */
+  position: relative;
+  background-image: url("..//assets/sheplays.png");
+  background-position: center;
+  background-repeat: repeat;
 }
 
+/* Default size for medium */
 .revisedLogo2 {
-    height: 180px;
-    width: 180px;
-    /* border: 4px solid lightblue */
-
-    
+  width: 150px;
+  height: auto;
 }
 
+/* Large size for dashboard */
+.revisedLogo2.large {
+  width: 180px;
+  margin-top: 20px;
+}
+
+/* Small size for forgot password */
+.revisedLogo2.small {
+  width: 250px;
+}
 
 /* Navigation Container */
 .nav-container {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-end; /* Align everything to the right */
-    flex-grow: 1;
-    /* border: 3px solid pink; */
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-end; /* Align everything to the right */
+  flex-grow: 1;
+  
 }
 
 .nav-top {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Align items to the right */
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right; /* Align items to the right */
+  padding: 5px 5px;
+  font-size: 18px;
+  width: 500px;
+  border-radius: 60px;
 }
 
 /* Navigation Row */
 .nav {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
 }
 
 .nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav ul li a:hover {
-    color: #f39c12;
+  color: #f39c12;
 }
 
 /* Profile Picture */
 .profile-pic-container {
-    margin-left: 20px;
-    display: block;
-    margin-left: 20px;
-    
+  margin-left: 20px;
+  display: block;
+  margin-left: 20px;
 }
 /* Profile Picture Container */
 .profile-pic-with-notification {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 /* Notification Icon Container */
 .notification-container {
-    position: absolute;
-    bottom: -5px; /* Position it slightly above the profile picture */
-    left: -20px; /* Position it slightly to the right of the profile picture */
-    width: 20px; /* Adjust size of notification icon */
-    height: 20px;
-    cursor: pointer;
+  position: absolute;
+  bottom: -5px; /* Position it slightly above the profile picture */
+  left: -20px; /* Position it slightly to the right of the profile picture */
+  width: 20px; /* Adjust size of notification icon */
+  height: 20px;
+  cursor: pointer;
 }
 
 .notification-icon {
-    width: 100%; /* Makes the icon fill the container */
-    height: 100%; /* Makes the icon fill the container */
+  width: 100%; /* Makes the icon fill the container */
+  height: 100%; /* Makes the icon fill the container */
 }
 
 /* Optional: Hover effect */
 .notification-container:hover .notification-icon {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 .profile-pic {
-    width: 70px;  /* Fixed width */
-    height: 70px; /* Fixed height (same as width for a perfect circle) */
-    border-radius: 50%; /* Ensures the image appears circular */
-    object-fit: fit;
-    display: block;
+  width: 70px; /* Fixed width */
+  height: 70px; /* Fixed height (same as width for a perfect circle) */
+  border-radius: 50%; /* Ensures the image appears circular */
+  object-fit: fit;
+  display: block;
 }
 
 /* Search Bar */
 .search-bar {
-    margin-top: 80px;
-    display: flex;
-    align-items: flex-end;
-    width: 300px;
-    
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  width: 300px;
 }
 
 .search-bar input {
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
-    border-radius: 5px;
-    background-color: #333; /* Dark background for input fields */
-    color: white; /* White text for input fields */
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
+  border-radius: 5px;
+  background-color: #333; /* Dark background for input fields */
+  color: white; /* White text for input fields */
 }
-
-
 
 /* Welcome Message - Bottom Left */
 .welcome-container {
-    position: absolute;
-    bottom: 10px;
-    left: 220px;
-    font-size: 18px;
-    font-weight: bold;
-    top: 170px;
-    
+  position: absolute;
+ 
+  left: 1px;
+  top: 0px;
+  width: 270px;
+
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+
+  font-size: 14px;
+  font-weight: bold;
+ 
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+  text-align: center;
 }
 
 /* Sub Header Section */
 .sub-header {
-    background-color: #f39c12;
-    color: rgb(0, 0, 0);
-    text-align: center;
-   padding: 2px;
-    width: 100%;
-    border: 1px solid white;
+  background-color: #f39c12;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2px;
+  width: 100%;
+  border: 1px solid white;
 }
 
 /* Stretched Text Effect */
 .stretched-text {
-    font-family: Arial, sans-serif; 
-    font-size: 30px; 
-    letter-spacing: 1px; 
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
 
 /* Hero Section */
 .hero {
-    position: relative; 
-    background-image: url('../assets/background.png');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    height: 80vh;
-    padding: 80px 50px;
-    /* border: 6px solid green; */
+  position: relative;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  height: 80vh;
+  padding: 80px 50px;
+  /* border: 6px solid green; */
 }
 
 /* Overlay for better text contrast */
 .hero::before {
-    content: ''; /* Empty content for the overlay */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay with 40% opacity */
-    z-index: 1; /* Place the overlay below the text */
+  content: ""; /* Empty content for the overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay with 40% opacity */
+  z-index: 1; /* Place the overlay below the text */
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2; /* Ensures text stays on top of the overlay */
-    top: 170px;
+  position: relative;
+  z-index: 2; /* Ensures text stays on top of the overlay */
+  top: 170px;
 }
 
 .hero-content h2 {
-    font-size: 3rem;
-    margin-top: 100px;
+  font-size: 3rem;
+  margin-top: 100px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .cta-button {
-    background-color: #f39c12;
-    padding: 10px 30px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
+  background-color: #f39c12;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 
 .cta-button:hover {
-    background-color: #e67e22;
+  background-color: #e67e22;
 }
 
 .features {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: #f39c12;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f39c12;
 }
 
 .feature-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Create a lifted effect */
     width: 30%;
     text-align: center;
-}
+    cursor: pointer; /* Makes it look like a clickable button */
+    transition: all 0.3s ease; /* Smooth transition for hover and active states */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-card:hover {
+    background-color: #f39c12; /* Changes background color on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover for a more button-like effect */
+    transform: translateY(-5px); /* Lift the card slightly when hovered */
+  }
+  
+  .feature-card:active {
+    background-color: #e67e22; /* Changes background color when pressed */
+    transform: scale(0.95); /* Press down effect (reduces size slightly) */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Smaller shadow when pressed */
+  }
 
 .feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
 }
 
 .feature-card p {
-    font-size: 1rem;
-    color: #555;
+  font-size: 1rem;
+  color: #555;
 }
-  
+
 /* Testimonials Section */
 .testimonials {
-    background-color: #f9f9f9;
-    padding: 50px;
-    text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
 }
 
 .testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .testimonial-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
 }
 
 .testimonial-card p {
-    font-style: italic;
-    color: #555;
-    font-size: 14px;
+  font-style: italic;
+  color: #555;
+  font-size: 14px;
 }
 
 /* Footer */
 footer {
-    background-color: #000000;
-    color: #fff;
-    padding: 20px 50px;
-    text-align: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 50px;
+  text-align: center;
 }
 
 footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer ul li a:hover {
-    color: #f39c12;
+  color: #f39c12;
 }
 
 footer p {
-    margin-top: 10px;
+  margin-top: 10px;
 }

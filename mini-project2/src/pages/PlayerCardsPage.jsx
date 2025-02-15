@@ -1,10 +1,12 @@
 import React from 'react';
 import PlayerCards from '../components/PlayerCards'; // Import PlayerCards component
+import NavWithProfile from '../components/NavWIthProfile';
 
 const PlayerCardsPage = () => {
   return (
+    
     <div>
-      <h1>Player Cards Page</h1>
+      <NavWithProfile/>
       <PlayerCards /> {/* Use the PlayerCards component here */}
     </div>
   );
