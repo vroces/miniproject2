@@ -39,7 +39,7 @@ body {
   color: white;
   /* padding: 5px 20px; */
   position: relative;
-  background-image: url("..//assets/sheplays.png");
+  background-image: url("../assets/sheplays.png");
   background-position: center;
   background-repeat: repeat;
 }

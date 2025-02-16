@@ -1,13 +1,12 @@
-// src/components/NavWithProfile.jsx
-
 import React from "react";
-import Navigation from "./Navigation"; // Assuming you have a Navigation component
-import Profile from "./Profile"; // Assuming you have a Profile component
+import Navigation from "./Navigation";
+import Profile from "./Profile";
+import '../styles/GamedayPageStyles.css';
 
 const NavWithProfile = () => {
   return (
-    <div className="nav-container">
-      <div className="nav-top">
+    <div className="nav-with-profile-container">
+      <div className="nav-with-profile-top">
         <Navigation />
         <Profile />
       </div>
@@ -16,3 +15,8 @@ const NavWithProfile = () => {
 };
 
 export default NavWithProfile;
+
+
+
+
+

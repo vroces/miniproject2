@@ -2,56 +2,64 @@ import React, { useState, useRef } from 'react';
 
 const PlayerCard = ({ player, onSwipeLeft, onSwipeRight }) => {
   const [xPosition, setXPosition] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isSwiping, setIsSwiping] = useState(false); // Track swipe to animate out
   const startX = useRef(null);
-  const cardRef = useRef(null);
 
   // Handle mouse down (start of the swipe)
   const handleMouseDown = (e) => {
-    startX.current = e.clientX; // Start position of the mouse
-    console.log("Mouse Down:", startX.current);
+    startX.current = e.clientX;
+    setIsDragging(true);
+    document.body.style.userSelect = 'none'; // Prevent text selection while dragging
   };
 
-  // Handle mouse move (during the swipe)
+  // Handle mouse move (dragging)
   const handleMouseMove = (e) => {
-    if (!startX.current) return;
-
-    const deltaX = e.clientX - startX.current; // Movement in X direction
+    if (!isDragging) return;
+    const deltaX = e.clientX - startX.current;
     setXPosition(deltaX);
-    console.log("Mouse Move:", deltaX);
   };
 
-  // Handle mouse up (end of the swipe)
+  // Handle mouse up (end of swipe)
   const handleMouseUp = () => {
-    console.log("Mouse Up, xPosition:", xPosition);
-
     if (xPosition < -100) {
-      console.log(`${player.name} swiped left`);
-      onSwipeLeft(player); // Call the left swipe handler
+      // Swiping Left
+      setIsSwiping(true);
+      setTimeout(() => onSwipeLeft(player), 300); // Delay removal for smooth animation
     } else if (xPosition > 100) {
-      console.log(`${player.name} swiped right`);
-      onSwipeRight(player); // Call the right swipe handler
+      // Swiping Right
+      setIsSwiping(true);
+      setTimeout(() => onSwipeRight(player), 300);
     }
 
-    setXPosition(0); // Reset position after swipe
-    startX.current = null; // Reset start position
+    setIsDragging(false);
+    setTimeout(() => {
+      setXPosition(0);
+      setIsSwiping(false);
+    }, 300);
+
+    document.body.style.userSelect = ''; // Restore text selection
   };
 
   return (
     <div
-      ref={cardRef}
       className="player-card"
-      onMouseDown={handleMouseDown} // Mouse down event
-      onMouseMove={handleMouseMove} // Mouse move event
-      onMouseUp={handleMouseUp} // Mouse up event
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
       style={{
-        transform: `translateX(${xPosition}px)`,
-        transition: xPosition === 0 ? 'transform 0.3s ease-in-out' : 'none',
+        transform: `
+          translateX(${xPosition}px) 
+          rotate(${xPosition / 15}deg)`, // Adds a slight rotation effect
+        opacity: isSwiping ? 0 : 1, // Fade out on swipe
+        transition: isDragging ? 'none' : 'transform 0.3s ease-out, opacity 0.3s ease-out',
       }}
     >
       <img src={player.profilePic} alt={player.name} />
       <h3>{player.name}</h3>
-      <p>{player.position}</p>
+      <p><strong>Position:</strong>{player.position}</p>
       <p><strong>Location:</strong> {player.location}</p>
+      <p><strong>Team:</strong> {player.team}</p>
       <p>{player.bio}</p>
     </div>
   );

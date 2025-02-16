@@ -1,17 +1,17 @@
-/* In your styles */
-.nav-container {
-    position: absolute;
-    top: 5px; /* Distance from the top of the page */
-    right: 5px; /* Distance from the right of the page */
+/* GamedayPageStyles.css */
+.gameday-page-container {
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    width: auto;
+    flex-direction: column; /* Stack the header, content, and footer vertically */
+    min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
   }
   
-  .nav-top {
-    display: flex;
-    justify-content: space-between; /* Space out the navigation and profile */
-    align-items: center;
-    width: 100%; /* Full width if needed */
+  
+  
+  .gameday-content {
+    flex-grow: 1; /* This makes sure the content takes up the available space between header and footer */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f0f0f0; /* Light background color for the content area */
+    
   }
+  
   
