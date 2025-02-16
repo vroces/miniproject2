@@ -1,0 +1,116 @@
+/* General Layout and Structure */
+.home-button {
+  position: absolute;
+  top: 20px;  /* Adjust distance from top */
+  left: 20px; /* Adjust distance from left */
+  z-index: 10; /* Ensure it's above the cards */
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;  /* Adjust distance from top */
+  right: 20px; /* Adjust distance from right */
+  z-index: 10; /* Ensure it's above the cards */
+}
+
+.privacy-policy-page {
+  background-color: #000; /* Black background for the page */
+  color: white; /* White text for contrast */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  max-width: 100%; /* Limit the width for readability */
+  margin: 0 auto; /* Center the page content */
+  border-radius: 10px; /* Rounded corners for a modern feel */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+
+.privacy-policy-page h1,
+.privacy-policy-page h2,
+.privacy-policy-page h3,
+.privacy-policy-page h4 {
+  color: rgb(223, 183, 52); /* Gold color for headings */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+.privacy-policy-page h1 {
+  font-size: 36px;
+}
+
+.privacy-policy-page h2 {
+  font-size: 28px;
+}
+
+.privacy-policy-page h3,
+.privacy-policy-page h4 {
+  font-size: 22px;
+}
+
+/* Paragraph Styling */
+.privacy-policy-page p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify; /* Justify text for a more structured look */
+  text-indent: 20px; /* Add indentation for better paragraph readability */
+}
+
+/* Lists Styling */
+.privacy-policy-page ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.privacy-policy-page ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.privacy-policy-page ul li::before {
+  content: "•"; /* Custom bullet point */
+  color: rgb(223, 183, 52); /* Gold bullet */
+  position: absolute;
+  left: 0;
+}
+
+/* Links Styling */
+.privacy-policy-page a {
+  color: rgb(223, 183, 52); /* Gold color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.privacy-policy-page a:hover {
+  color: #0095f6; /* Blue color when hovering over links */
+  text-decoration: underline;
+}
+
+/* Section Headers */
+.privacy-policy-page .section-heading {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: rgb(223, 183, 52); /* Gold color */
+  border-bottom: 2px solid rgb(223, 183, 52); /* Underline with gold */
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Subsections */
+.privacy-policy-page .subsection {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Add some spacing for better readability */
+.privacy-policy-page > * {
+  margin-bottom: 30px;
+}
+
+

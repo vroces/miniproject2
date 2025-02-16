@@ -1,0 +1,74 @@
+/* Ensures no overflow or gap on the right side */
+* {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  
+  /* Make sure the container fits the full screen */
+.about-us-page {
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    min-height: 100vh; /* Ensure full viewport height */
+    width: 100vw; /* Full width of the screen */
+    max-width: 100%; /* Prevents overflow horizontally */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden; /* Prevents overflow in any direction */
+    position: relative;
+    margin: 0; /* Remove any margin */
+  }
+  
+  .about-us-page p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 20px;
+    max-width: 800px; /* Keeps text readable on larger screens */
+  }
+  
+  .about-us-heading {
+    color: rgb(223, 183, 52);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .about-us-welcome {
+    color: rgb(223, 183, 52);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .about-us-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .video-container {
+    margin-top: 30px;
+    text-align: center;
+    border: 4px solid rgb(223, 183, 52);
+    
+  }
+  

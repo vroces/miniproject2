@@ -8,6 +8,10 @@ import { AuthProvider } from "./context/AuthContext";
 import Gameday from "./pages/GameDay";
 import WhereWePlay from "./pages/WhereWePlay";
 import MasterYourGame from "./pages/MasterYourGame";
+import AboutUs from "./pages/AboutUs";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsService from "./pages/TermsService";
+import Contact from "./pages/Contact";
 
 
 
@@ -24,6 +28,10 @@ function App() {
         <Route path="/gameday" element={<Gameday />} />
         <Route path="/where-we-play" element={<WhereWePlay />} />
         <Route path="/master-your-game" element={<MasterYourGame />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsService />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
     </AuthProvider>

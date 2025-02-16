@@ -1,0 +1,43 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    width: 100vw;
+    background-color: #121212; /* Dark background */
+
+  background: url("../assets/sheplays.png");
+  background-size: contain; /* Cover entire screen */
+  }
+  
+  .contact-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+  }
+  
+  .contact-form .form-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(223, 183, 52); /* Gold color */
+    margin-bottom: 10px;
+  }
+  
+  .contact-form .form-subtext {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+}
+  

@@ -136,16 +136,17 @@ body {
   opacity: 0.7;
 }
 .profile-pic {
-  width: 70px; /* Fixed width */
-  height: 70px; /* Fixed height (same as width for a perfect circle) */
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height (same as width for a perfect circle) */
   border-radius: 50%; /* Ensures the image appears circular */
   object-fit: fit;
   display: block;
+  padding: 10px 10px;
 }
 
 /* Search Bar */
 .search-bar {
-  margin-top: 50px;
+  margin-top: 19px;
   display: flex;
   align-items: flex-end;
   width: 300px;
@@ -184,12 +185,12 @@ body {
 
 /* Sub Header Section */
 .sub-header {
-  background-color: #f39c12;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 2px;
   width: 100%;
-  border: 1px solid white;
+  border: 6px solid rgb(0, 0, 0);
 }
 
 /* Stretched Text Effect */
@@ -232,7 +233,7 @@ body {
 
 .hero-content h2 {
   font-size: 3rem;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 .hero-content p {
@@ -241,27 +242,35 @@ body {
 }
 
 .cta-button {
-  background-color: #f39c12;
-  padding: 10px 30px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: 5px;
-}
-
-.cta-button:hover {
-  background-color: #e67e22;
-}
+    font-size: 16px;
+    color: rgb(255, 255, 255); /* Gold color for the button */
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(58, 123, 251);
+    
+    
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: rgb(223, 183, 52);
+    color: black; /* Text color when hovered */
+  }
 
 .features {
   display: flex;
   justify-content: space-between;
   padding: 50px;
-  background-color: #f39c12;
-}
 
+  background: url("/features.png");
+  background-size: 100% 100%; 
+  border: 2px solid black;
+  
+}
 .feature-card {
-    background-color: #fff;
+    background-color: #dedbdb;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Create a lifted effect */
@@ -275,13 +284,13 @@ body {
   }
   
   .feature-card:hover {
-    background-color: #f39c12; /* Changes background color on hover */
+    background-color:  rgb(223, 183, 52); /* Changes background color on hover */
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover for a more button-like effect */
     transform: translateY(-5px); /* Lift the card slightly when hovered */
   }
   
   .feature-card:active {
-    background-color: #e67e22; /* Changes background color when pressed */
+    background-color:  rgb(223, 183, 52); /* Changes background color when pressed */
     transform: scale(0.95); /* Press down effect (reduces size slightly) */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Smaller shadow when pressed */
   }
@@ -299,7 +308,8 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  background-color: #f9f9f9;
+  background-color: #222322;
+  
   padding: 50px;
   text-align: center;
 }
@@ -310,18 +320,19 @@ body {
 }
 
 .testimonial-card {
-  background-color: #fff;
+  background-color: #000000;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
   max-width: 600px;
   text-align: center;
+  border: 1px solid rgb(223, 183, 52);
 }
 
 .testimonial-card p {
   font-style: italic;
-  color: #555;
+  color: #ffffff;
   font-size: 14px;
 }
 
