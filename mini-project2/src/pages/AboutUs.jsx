@@ -8,7 +8,7 @@ const AboutUs = () => {
     <div className="about-us-page">
       <HomeButton />
       <LogoutButton />
-      <h1 className="about-us-heading">About ShePlays: Football</h1>
+      <h1 className="about-us-heading">About Us</h1>
       <p>
         ShePlays: Football was created with one goal in mind—to unite female
         tackle football players from around the world. Women’s football is a
