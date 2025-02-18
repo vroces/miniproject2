@@ -1,7 +1,15 @@
+.gameday-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+}
+
 .gameday-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  flex-grow: 1; /* Allow this section to grow and fill available space */
   padding: 20px;
   background-color: rgb(0, 0, 0);
 }
@@ -34,3 +42,4 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border: 2px solid rgb(223, 183, 52);
 }
+
