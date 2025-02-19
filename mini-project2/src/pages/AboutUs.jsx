@@ -55,11 +55,19 @@ const AboutUs = () => {
 
       {/* Video Section */}
       <div className="video-container">
-        <video width="100%" height="auto" controls>
-          <source src="/highlights2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+  <iframe
+    width="100%"
+    height="auto"
+    src="https://www.youtube.com/embed/xlEa5A0BIGU?si=v7j_wWv2ZPFmbfn9"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    title="YouTube video"
+  ></iframe>
+</div>
+
+
+
     </div>
   );
 };

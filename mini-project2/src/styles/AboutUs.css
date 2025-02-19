@@ -66,9 +66,22 @@
   }
   
   .video-container {
-    margin-top: 30px;
-    text-align: center;
-    border: 4px solid rgb(223, 183, 52);
+    position: relative;
+    width: 800px;           /* Full width of the container */
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;              /* Remove explicit height */
+    overflow: hidden;
+    margin-top: 25px;
     
   }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;            
+    height: 100%;           
+    border: 4px solid rgb(223, 183, 52)
+  }
+  
   
