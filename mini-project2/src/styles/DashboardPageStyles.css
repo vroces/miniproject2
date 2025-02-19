@@ -150,6 +150,7 @@ body {
   display: flex;
   align-items: flex-end;
   width: 300px;
+  margin-right: 1px;
 }
 
 .search-bar input {
@@ -308,8 +309,10 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  background-color: #222322;
-  
+  background-image: url("../assets/signupbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;  
   padding: 50px;
   text-align: center;
 }

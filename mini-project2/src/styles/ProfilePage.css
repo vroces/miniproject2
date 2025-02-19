@@ -1,0 +1,38 @@
+.profile-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    border: 4px solid red;
+  }
+  
+  /* Main content area */
+  .profile-page-content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box; 
+    border: 4px solid pink;
+  }
+  
+ 
+  .profile-page-top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; 
+    margin-top: 40px;
+    border: 3px solid yellow;
+    justify-content: center;
+  }
+  
+  
+  
+ 

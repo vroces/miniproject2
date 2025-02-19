@@ -8,7 +8,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <AppRoutes /> {/* Using the AppRoutes component */}
+        <AppRoutes /> 
       </Router>
     </AuthProvider>
   );
