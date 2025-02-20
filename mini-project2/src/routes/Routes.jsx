@@ -12,6 +12,8 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsService from "../pages/TermsService";
 import Contact from "../pages/Contact";
 import ProfilePage from "../pages/ProfilePage";
+import News from "../pages/News";
+import Community from "../pages/Community";
 
 const AppRoutes = () => {
   return (
@@ -29,6 +31,9 @@ const AppRoutes = () => {
       <Route path="/terms-of-service" element={<TermsService />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/profile" element={<ProfilePage/>} /> 
+      <Route path="/news" element={<News/>} />
+      <Route path="/community" element={<Community/>} />
+     
     </Routes>
   );
 };

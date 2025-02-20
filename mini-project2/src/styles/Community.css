@@ -1,0 +1,56 @@
+@keyframes explode {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+      text-shadow: 0 0 40px rgba(255, 255, 255, 1), 0 0 80px rgba(255, 255, 255, 0.9);
+    }
+    100% {
+      transform: scale(1);
+      text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 0.9);
+    }
+  }
+  
+  @keyframes fadeInPulse {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+      text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 0.9);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+      text-shadow: 0 0 50px rgba(255, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 0.9);
+    }
+  }
+  
+  .newscontent {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: explode 1.5s ease-out, fadeInPulse 4s ease-in-out infinite alternate;
+    display: inline-block; /* Ensures smooth scaling */
+    color: white;
+  }
+  
+  
+  
+  .news-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    
+  }
