@@ -1,24 +1,28 @@
-General Reset * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.weplaypage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes sure the page takes full height */
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
-  
-  /* Body */
-  body {
-    font-family: Arial, sans-serif;
-  }
-    .where-we-play {
-        display: flex;
-        flex-direction: column; /* Stack the header, content, and footer vertically */
-        min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
-      }
-      
-      
-      
-      .weplay-content {
-        flex-grow: 1; /* This makes sure the content takes up the available space between header and footer */
-        padding: 20px; /* Add padding for spacing */
-        background-color: #f0f0f0; /* Light background color for the content area */
-        
-      }
+
+.weplay-content {
+  flex-grow: 1; /* Pushes footer down */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.footer {
+  width: 100vw;
+}
+
+
