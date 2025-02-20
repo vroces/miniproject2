@@ -18,7 +18,7 @@ import Community from "../pages/Community";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
+      <Route index element={<LandingPage />} />
       <Route path="/signup" element={<SignUpPage />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/player-cards" element={<PlayerCardsPage />} />
